@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/favicon.ico">
     <title>Natallia Ivanyuk</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,117 +11,133 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>Contacts</li>
-          <li>Summary</li>
-          <li>Skills</li>
-          <li>Code</li>
-          <li>Experience</li>
-          <li>Education</li>
-          <li>Languages</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <aside class="">
-        <section>
-          <h2>Contacts</h2>
-          <ul>
-            <li>Phone: +375299332777</li>
-            <li>E-mail: natashaivanyuk@gmail.com</li>
-            <li>GitHub: <a href="https://github.com/whiterabbit8">whiterabbit8</a></li>
-            <li>Discord: <a href="https://discordapp.com/users/586640596320387074">Natallia (@whiterabbit8)</a></li>
-            <li>Location: Brest, Belarus</li>
-         </ul>
-        </section>
-        <section>
-          <h2>Skills</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Ruby</li>
-            <li>GitHub</li>
-            <li>Adobe Photoshop</li>
-            <li>CorelDRAW</li>
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
           </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-container">
+      <div class="container">
+        <aside class="">
+          <section>
+            <img src="assets/img/avatar.png" alt="My Photo" class="avatar">
+          </section>
+          <section class="section">
+            <h1 class="section-title">Natallia Ivanyuk</h1>
+          </section>
+          <section class="section" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul>
+              <li>Phone: +375299332777</li>
+              <li>E-mail: natashaivanyuk@gmail.com</li>
+              <li>GitHub: <a href="https://github.com/whiterabbit8">whiterabbit8</a></li>
+              <li>Discord: <a href="https://discordapp.com/users/586640596320387074">Natallia (@whiterabbit8)</a></li>
+              <li>Location: Brest, Belarus</li>
+           </ul>
+          </section>
+          <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Ruby</li>
+              <li>GitHub</li>
+              <li>Adobe Photoshop</li>
+              <li>CorelDRAW</li>
+            </ul>
+          </section>
+        </aside>
+        <section class="section" id="summary">
+          <h2 class="section-title">Summary</h2>
+          <p>SMT Process Engineer with good analytical skills and 4 years of experience.
+            Prepare, implement and monitor assembly process in New Product Introduction department.
+            Attentive to details, can think outside the box and always willing to learn. Looking for new opportunities in the IT industry.</p>
         </section>
-      </aside>
-      <section>
-        <h2>Skills</h2>
-        <p>SMT Process Engineer with good analytical skills and 4 years of experience.
-          Prepare, implement and monitor assembly process in New Product Introduction department.
-          Attentive to details, can think outside the box and always willing to learn. Looking for new opportunities in the IT industry.</p>
-      </section>
-      <section>
-        <h2>Code Example</h2>
-        <code>
-          function autofill() {
-            var sheet = SpreadsheetApp.getActiveSheet();
-            var lastRow = sheet.getLastRow()+1;
+        <section class="section" id="code">
+          <h2 class="section-title">Code Example</h2>
+          <code>
+            function autofill() {
+              var sheet = SpreadsheetApp.getActiveSheet();
+              var lastRow = sheet.getLastRow()+1;
 
-            for (var i=1; i<=lastRow; i++) {
-              var value = sheet.getRange(i,1).getValue();
-              var date = sheet.getRange(i,6).getValue();
-              var fid = sheet.getRange(i,5).getValue();
+              for (var i=1; i<=lastRow; i++) {
+                var value = sheet.getRange(i,1).getValue();
+                var date = sheet.getRange(i,6).getValue();
+                var fid = sheet.getRange(i,5).getValue();
 
-              for (var j=sheet.getActiveCell().getRow(); j<=lastRow; j++) {
-                if (sheet.getRange(j,1).getValue() == value) {
-                  sheet.getRange(j,6).setValue(date);
-                  sheet.getRange(j,5).setValue(fid);
-                  }
+                for (var j=sheet.getActiveCell().getRow(); j<=lastRow; j++) {
+                  if (sheet.getRange(j,1).getValue() == value) {
+                    sheet.getRange(j,6).setValue(date);
+                    sheet.getRange(j,5).setValue(fid);
+                    }
 
+                }
               }
             }
-          }
-        </code>
-      </section>
-      <section>
-        <h2>Experience</h2>
-        <pre>04/2018 - Present
-           Jofre Labortechnic
-           SMT Process Engineer</pre>
-      </section>
-      <section>
-        <h2>Education</h2>
-        <ul>
-          <li>
-            <p>2013</p>
-            <p>Brest Art School</p>
-          </li>
-          <li>
-            <p>2017</p>
-            <p>Rubyroid Labs</p>
-            <p>Ruby on Rails (unfinished)</p>
-          </li>
-          <li>
-            <p>2018</p>
-            <p>Belarusian State University of Informatics and Radioelectronics</p>
-            <p>Faculty of Computer-Aided Design</p>
-            <p>Design and Manufacture of Software-Controlled Electronic Devices</p>
-          </li>
-          <li>
-            <p>2020</p>
-            <p>Business Consult</p>
-            <p>Failure Mode and Effects Analysis</p>
-          </li>
-          <li>
-            <p>2021</p>
-            <p>Streamline Language School</p>
-            <p>General English Course</p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <ul>
-          <li>Russian - Native</li>
-          <li>Belarussian - Native</li>
-          <li>English - Intermediate</li>
-          <li>Polish - Basic</li>
-        </ul>
-      </section>
+          </code>
+        </section>
+        <section class="section" id="experience">
+          <h2 class="section-title">Experience</h2>
+          <pre>04/2018 - Present
+             Jofre Labortechnic
+             SMT Process Engineer</pre>
+        </section>
+        <section class="section" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul>
+            <li>
+              <p>2013</p>
+              <p>Brest Art School</p>
+            </li>
+            <li>
+              <p>2017</p>
+              <p>Rubyroid Labs</p>
+              <p>Ruby on Rails (unfinished)</p>
+            </li>
+            <li>
+              <p>2018</p>
+              <p>Belarusian State University of Informatics and Radioelectronics</p>
+              <p>Faculty of Computer-Aided Design</p>
+              <p>Design and Manufacture of Software-Controlled Electronic Devices</p>
+            </li>
+            <li>
+              <p>2020</p>
+              <p>Business Consult</p>
+              <p>Failure Mode and Effects Analysis</p>
+            </li>
+            <li>
+              <p>2021</p>
+              <p>Streamline Language School</p>
+              <p>General English Course</p>
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="languages">
+          <h2 class="section-title">Languages</h2>
+          <ul>
+            <li>Russian - Native</li>
+            <li>Belarussian - Native</li>
+            <li>English - Intermediate</li>
+            <li>Polish - Basic</li>
+          </ul>
+        </section>
+      </div>
+
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container">
+
+      </div>
+    </footer>
   </body>
 </html>
