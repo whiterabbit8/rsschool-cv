@@ -1,22 +1,66 @@
 body {
-  background: #f1f6f7;
+  background: none;
   color: #203537;
   font-size: 18px;
   line-height: 1.5;
   font-family: 'Roboto Slab', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-column {
+  width: 30%;
+  justify-content: flex-start;
+  line-height: 2;
+  background: #91bcc3;
+}
+
+.right-column {
+  width: 70%;
+
 }
 
 .section-title {
   background: #91bcc3;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #203537;
+  padding-left: 10px;
+}
+
+.left-column .section-title {
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #203537;
+  padding-left: 10px;
 }
 
 .avatar {
   width: 200px;
   height: 200px;
+  margin: 18.5px;
+  margin-left: 75px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.profile {
+  width: 840px;
+  height: 268px;
+  font-size: 28px;
+  letter-spacing: 2px;
+  padding-left: 40px;
+  padding-top: 0px;
+  text-transform: uppercase;
+}
+
+.profile p {
+  font-size: 22px;
 }
 
 * {
@@ -28,18 +72,13 @@ body {
     scroll-behavior: smooth;
   }
 
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .container {
-    max-width: 1440px;
+.container {
+    max-width: 1200px;
     margin: 0 auto;
-  }
+    display: flex;
+}
 
-  .nav-list {
+.nav-list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -48,12 +87,13 @@ body {
 
 .nav-link {
   padding: 0 20px;
-  line-height: 50px;
+  line-height: 22px;
   transition: 3s;
 }
 
 .nav-item a {
   color: #2F4F4F;
+  font-size: 20px;
   text-decoration: none;
   transition: color 0.5s;
 }
@@ -64,19 +104,32 @@ body {
 
 .nav {
   background: #ecc95d;
+  width: 1200px;
+  height: 65px;
+  margin: 0 auto;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
 }
 
 .main-container {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 65px;
 }
 
 .section {
-  width: 50%;
+  width: 100%;
+  padding: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .section {
     width: 100%;
   }
+}
+
+.list-item {
+  text-decoration: none;
+  list-style: none;
 }
