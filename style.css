@@ -12,7 +12,7 @@ body {
 .left-column {
   width: 35%;
   justify-content: flex-start;
-  line-height: 2;
+  line-height: 1.5;
   background: #99714f;
   color: #f9fcfc;
   padding: 5px;
@@ -146,8 +146,17 @@ html {
 }
 
 .list-item {
-  text-decoration: none;
   list-style: none;
+  padding-left: 10px;
+  line-height: 2.5;
+}
+
+.svg {
+  filter: invert(97%) sepia(100%) saturate(499%) hue-rotate(175deg) brightness(109%) contrast(96%);
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 a {
