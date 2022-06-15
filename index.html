@@ -39,24 +39,24 @@
           <section class="left-section" id="contacts">
             <h2 class="section-title">Contacts</h2>
             <ul class="list-item">
-              <li>Phone: +375299332777</li>
-              <li>E-mail: <a href="mailto:natashaivanyuk@gmail.com" title="E-mail">natashaivanyuk@gmail.com</a></li>
-              <li>GitHub: <a href="https://github.com/whiterabbit8" title="GitHub Link">whiterabbit8</a></li>
-              <li>Discord: <a href="https://discordapp.com/users/586640596320387074" title="Discord Link">Natallia (@whiterabbit8)</a></li>
-              <li>Location: Brest, Belarus</li>
+              <li><img src="assets/icons/phone-solid.svg" alt="E-mail-icon" class="svg">Phone: +375299332777</li>
+              <li><img src="assets/icons/envelope-solid.svg" alt="E-mail-icon" class="svg">E-mail: <a href="mailto:natashaivanyuk@gmail.com" title="E-mail">natashaivanyuk@gmail.com</a></li>
+              <li><img src="assets/icons/github-brands.svg" alt="E-mail-icon" class="svg">GitHub: <a href="https://github.com/whiterabbit8" title="GitHub Link">whiterabbit8</a></li>
+              <li><img src="assets/icons/discord-brands.svg" alt="E-mail-icon" class="svg">Discord: <a href="https://discordapp.com/users/586640596320387074" title="Discord Link">Natallia (@whiterabbit8)</a></li>
+              <li><img src="assets/icons/location-dot-solid.svg" alt="E-mail-icon" class="svg">Location: Brest, Belarus</li>
            </ul>
           </section>
 
           <section class="left-section" id="skills">
             <h2 class="section-title">Skills</h2>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Ruby</li>
-              <li>GitHub</li>
-              <li>Adobe Photoshop</li>
-              <li>CorelDRAW</li>
+            <ul class="list-item">
+              <li><img src="assets/icons/html5-brands.svg" alt="E-mail-icon" class="svg">HTML</li>
+              <li><img src="assets/icons/css3-alt-brands.svg" alt="E-mail-icon" class="svg">CSS</li>
+              <li><img src="assets/icons/js-brands.svg" alt="E-mail-icon" class="svg">JavaScript</li>
+              <li><img src="assets/icons/ruby.svg" alt="E-mail-icon" class="svg">Ruby</li>
+              <li><img src="assets/icons/github-brands.svg" alt="E-mail-icon" class="svg">GitHub</li>
+              <li><img src="assets/icons/adobe-photoshop.svg" alt="E-mail-icon" class="svg">Adobe Photoshop</li>
+              <li><img src="assets/icons/corel-draw.svg" alt="E-mail-icon" class="svg">CorelDRAW</li>
             </ul>
           </section>
 
@@ -74,27 +74,6 @@
             <p>SMT Process Engineer with good analytical skills and 4 years of experience.
               Prepare, implement and monitor assembly process in New Product Introduction department.
               Attentive to details, can think outside the box and always willing to learn. Looking for new opportunities in the IT industry.</p>
-          </section>
-
-          <section class="section" id="code">
-            <h2 class="section-title">Code Example</h2>
-            <pre class="pre"><code>function autofill() {
-  var sheet = SpreadsheetApp.getActiveSheet();
-  var lastRow = sheet.getLastRow()+1;
-
-  for (var i=1; i<=lastRow; i++) {
-    var value = sheet.getRange(i,1).getValue();
-    var date = sheet.getRange(i,6).getValue();
-    var fid = sheet.getRange(i,5).getValue();
-
-    for (var j=sheet.getActiveCell().getRow(); j<=lastRow; j++) {
-      if (sheet.getRange(j,1).getValue() == value) {
-        sheet.getRange(j,6).setValue(date);
-	sheet.getRange(j,5).setValue(fid);
-      }
-    }
-  }
-}</code></pre>
           </section>
 
           <section class="section" id="experience">
@@ -161,6 +140,27 @@
                 <p>General English Course</p>
               </div>
             </div>
+          </section>
+
+          <section class="section" id="code">
+            <h2 class="section-title">Code Example</h2>
+            <pre class="pre"><code>function autofill() {
+  var sheet = SpreadsheetApp.getActiveSheet();
+  var lastRow = sheet.getLastRow()+1;
+
+  for (var i=1; i<=lastRow; i++) {
+    var value = sheet.getRange(i,1).getValue();
+    var date = sheet.getRange(i,6).getValue();
+    var fid = sheet.getRange(i,5).getValue();
+
+    for (var j=sheet.getActiveCell().getRow(); j<=lastRow; j++) {
+      if (sheet.getRange(j,1).getValue() == value) {
+        sheet.getRange(j,6).setValue(date);
+	sheet.getRange(j,5).setValue(fid);
+      }
+    }
+  }
+}</code></pre>
           </section>
 
           <section class="section" id="languages">
