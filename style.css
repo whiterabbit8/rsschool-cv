@@ -157,6 +157,8 @@ html {
   height: 25px;
   margin-right: 10px;
   vertical-align: middle;
+  text-decoration: none;
+  list-style: none;
 }
 
 a {
