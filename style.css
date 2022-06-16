@@ -124,6 +124,7 @@ html {
   justify-content: flex-end;
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 
 .main-container {
