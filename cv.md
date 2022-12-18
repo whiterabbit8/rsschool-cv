@@ -1,5 +1,4 @@
 # __Natallia Ivanyuk__
-### __SMT Process Engineer__
 
 ## __Contact Information__  
 __Phone:__ +375299332777  
@@ -9,9 +8,10 @@ __Discord:__ [Natallia (@whiterabbit8)](https://discordapp.com/users/58664059632
 __Location:__ Brest, Belarus  
 
 ## __Summary__
-SMT Process Engineer with good analytical skills and 4 years of experience. Prepare,
-implement and monitor assembly process in New Product Introduction department. Attentive to details,
-can think outside the box and always willing to learn. Looking for new opportunities in the IT industry.
+SMT Process Engineer with more than 4 years experience. Self-reliant and curious individual 
+who enjoy learning new skills. Also have strong analytical skills, attentive to details, 
+creative and able to see things from a different perspective. Always willing to optimize work. 
+Seeking a career change to a Junior Front-End Developer position.
 
 ## __Skills__
 * HTML, CSS
@@ -37,6 +37,10 @@ function solution(number){
 __04/2018-06/2022__  
 __Jofre Labortechnic__  
 SMT Process Engineer
+
+__09/2022-12/2022__  
+__Sarai__  
+Cook  
 
 ## __Education__
 __2013__  
