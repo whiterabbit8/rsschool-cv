@@ -83,8 +83,8 @@ main {
 }
 
 .section {
-  padding: 0 30px;
-  margin: 15px 0;
+  padding: 65px 30px 0px 30px;
+  margin: -65px 0 15px 0;
 }
 
 .right-column p {
@@ -153,7 +153,8 @@ a:hover {
 }
 
 .left-section {
-  margin: 15px 0px 50px 35px;
+  margin: -65px 0px 50px 35px;
+  padding-top: 65px;
 }
 
 .list-item {
