@@ -155,22 +155,22 @@
 
           <section class="section" id="code">
             <h2 class="section-title">Code Example</h2>
-            <pre class="pre"><code>function solution(number){
-  var sum = 0;
-  for (var i = 1; i &lt; 10; i++) {
-    if ((i % 3 == 0) || (i % 5 ==0)) {
-      sum += i;
-    }
+            <pre class="pre"><code>function isPrime(num) {
+  if (num &lt;= 1) return false;
+  let deviders = Math.round(Math.sqrt(num));
+  for (let i = 2; i &lt;= deviders; i++) {
+    if (num % i === 0) return false
   }
-  return sum;
+  return true;
 }</code></pre>
           </section>
 
           <section class="section" id="projects">
             <h2 class="section-title">Projects</h2>
             <ul>
-              <li><a href="https://github.com/whiterabbit8/rsschool-cv/tree/gh-pages" title="GitHub Repository">CV Markdown</a></li>
               <li><a href="https://github.com/rolling-scopes-school/whiterabbit8-JSFEPRESCHOOL2022Q2/tree/travel" title="GitHub Repository">Travel</a></li>
+              <li><a href="https://github.com/rolling-scopes-school/whiterabbit8-JSFEPRESCHOOL2022Q4/tree/plants-part3/plants" title="GitHub Repository">Plants</a></li>
+              <li><a href="https://github.com/rolling-scopes-school/whiterabbit8-JSFEPRESCHOOL2022Q4/tree/momentum/momentum" title="GitHub Repository">Momentum</a></li>
             </ul>
           </section>
 
